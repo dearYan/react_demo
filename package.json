@@ -1,0 +1,26 @@
+{
+  "name": "'react_demo'",
+  "version": "1.0.0",
+  "description": "react node redux ecma6 application",
+  "main": "index.js",
+  "scripts": {
+       "start": "node ./server.js"
+  },
+  "repository": {
+       "type": "git",
+       "url": "git+https://github.com/dearYan/react_demo.git"
+  },
+  "dependencies": {
+       "react" : "^15.1.0",
+       "react-tools" : "^0.13.3"
+   },
+  "keywords": [
+       "react"
+  ],
+  "author": "April",
+  "license": "ISC",
+  "bugs": {
+       "url": "https://github.com/dearYan/react_demo/issues"
+  },
+  "homepage": "https://github.com/dearYan/react_demo#readme"
+}
