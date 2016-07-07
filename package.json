@@ -4,7 +4,7 @@
   "description": "react node redux ecma6 application",
   "main": "index.js",
   "scripts": {
-       "start": "node ./server.js"
+       "start":"set NODE_ENV=development && node ./server.js"
   },
   "repository": {
        "type": "git",

@@ -3,12 +3,13 @@ import { Provider } from 'react-redux'
 import routes from '../routes'
 import { Router } from 'react-router'
 
+// <Router history={history} routes={routes} />
 export default class Root extends Component {
   render() {
     const { store, history } = this.props
     return (
       <Provider store={store}>
-        <Router history={history} routes={routes} />
+          <div>Hello word!</div>
       </Provider>
     )
   }
