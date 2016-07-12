@@ -5,12 +5,11 @@ import createLogger from 'redux-logger'
 import rootReducer from '../reducers/index'
 
 export default function configureStore(initialState) {
+
     const store = createStore(
         rootReducer,
         initialState,
-        compose(
-          applyMiddleware(thunk, createLogger())
-        )
+        applyMiddleware(thunk, createLogger())
     )
 
     if (module.hot) {
@@ -21,6 +20,5 @@ export default function configureStore(initialState) {
       //   store.replaceReducer(nextRootReducer)
       // })
     }
-    console.log("====================== store",store);
     return store
 }
