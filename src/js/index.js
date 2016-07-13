@@ -6,16 +6,15 @@ const ReactDOM = require('react-dom');
 const reactRouter = require('react-router');
 const reactRouterRedux = require('react-router-redux');
 const Root = require('./common/Root');
-const configureStore = require('./store/configureStore');
+const configureStore = require('./store/configureStore')
 
 const browserHistory = reactRouter.browserHistory;
 const syncHistoryWithStore = reactRouterRedux.syncHistoryWithStore;
 
-
-const store = configureStore()
+const store = configureStore.configureStore.configureStore()
 const history = syncHistoryWithStore(browserHistory, store)
 
 ReactDOM.render(
-    <Root store={ store } history={ history } />,
+    <Root.Root store={ store } history={ history } />,
     document.getElementById('root')
 )

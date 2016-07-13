@@ -1,10 +1,14 @@
-import { createStore, applyMiddleware, compose } from 'redux'
-import thunk from 'redux-thunk'
-import createLogger from 'redux-logger'
-// import api from '../middleware/api'
-import rootReducer from '../reducers/index'
+const Redux = require('redux');
+const thunk = require('redux-thunk');
+const createLogger = require('redux-logger');
+const reducers = require('../reducers/index');
 
-export default function configureStore(initialState) {
+const createStore = Redux.createStore;
+const applyMiddleware = Redux.applyMiddleware;
+const compose = Redux.compose;
+const rootReducer = reducers.rootReducer;
+
+exports.configureStore = function (initialState) {
 
     const store = createStore(
         rootReducer,
@@ -22,3 +26,5 @@ export default function configureStore(initialState) {
     }
     return store
 }
+
+
