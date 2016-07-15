@@ -11,6 +11,7 @@
        "url": "git+https://github.com/dearYan/react_demo.git"
   },
   "dependencies": {
+       "antd": "^1.6.4",
        "react": "^0.14.3",
        "react-dom": "^0.14.3",
        "react-redux": "^4.2.1",
@@ -34,7 +35,9 @@
        "webpack-hot-middleware": "^2.9.1"
   },
   "keywords": [
-       "react"
+       "react",
+       "redux",
+       "router"
   ],
   "author": "April",
   "license": "ISC",
