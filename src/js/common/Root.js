@@ -11,9 +11,15 @@ const Component = React.Component;
 const PropTypes = React.PropTypes;
 
 //引入样式
-// require('antd/dist/antd.css')
+require('../../css/reset.css');
+require('../../css/main.css');
+
 //引入page
-const Index = require('../page/layout/index');
+const Index = require('../page/layout');
+const Article = require('../page/article').Article;
+const Community = require('../page/community').Community;
+const Family = require('../page/family').Family;
+const Works = require('../page/works').Works;
 const Home = Index.Home;
 
 class Root extends Component {
@@ -22,7 +28,11 @@ class Root extends Component {
         return (
             <Provider store = { store }>
                 <Router history = { history }>
-                    <Route path="/" component = { Home }>
+                    <Route path = "/" component = { Home }>
+                        <Route path = "/article" component = { Article }/>
+                        <Route path = "/community" component = { Community }/>
+                        <Route path = "/works" component = { Works }/>
+                        <Route path = "/family" component = { Family }/>
                     </Route>
                 </Router>
             </Provider>
