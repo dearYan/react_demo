@@ -27,3 +27,6 @@
 .content_container{
 	margin-top: 60px;
 }
+.disabled{
+	display: none;
+}
